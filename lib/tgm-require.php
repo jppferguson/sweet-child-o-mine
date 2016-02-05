@@ -30,14 +30,6 @@ function sweet_child_register_required_plugins() {
     // Sucuri Security: sucuri-scanner
 
     array(
-      'name'               => 'Disallow Indexing',
-      'slug'               => 'disallow-indexing',
-      'source'             => 'disallow-indexing.zip',
-      'required'           => !$require_on_production,
-      'force_activation'   => !$require_on_production,
-      'force_deactivation' => false,
-    ),
-    array(
       'name'               => 'GitHub Updater',
       'slug'               => 'github-updater',
       'source'             => 'https://github.com/afragen/github-updater/archive/5.3.4.zip',
@@ -51,14 +43,6 @@ function sweet_child_register_required_plugins() {
       'source'             => 'https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip',
       'required'           => false,
       "force_activation"   => false,
-      "force_deactivation" => false,
-    ),
-    array(
-      'name'               => 'WP Stage Switcher',
-      'slug'               => 'wp-stage-switcher',
-      'source'             => 'https://github.com/roots/wp-stage-switcher/archive/1.0.3.zip',
-      'required'           => true,
-      "force_activation"   => true,
       "force_deactivation" => false,
     ),
     array(
